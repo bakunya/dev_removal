@@ -69,7 +69,7 @@ export default function CardAnalyzeResult({ title, value }: { title: string, val
 						<table className="table-auto min-w-full">
 							<thead>
 								<tr>
-									<th className="border border-gray-300 p-3 max-w-[30px]">
+									<th className="border border-gray-300 p-3">
 										<div className="min-w-[30px] max-w-[30px] w-full h-full flex align-center justify-center">
 											<input type="checkbox" className="cursor-pointer w-[15px] h-[15px]" onChange={ handleAll } />
 										</div>
@@ -80,7 +80,7 @@ export default function CardAnalyzeResult({ title, value }: { title: string, val
 							<tbody>
 								{ path.map((v, i) => (
 									<tr key={ i }>
-										<td className="border border-gray-300 p-3 max-w-[30px]">
+										<td className="border border-gray-300 p-3">
 											<div className="min-w-[30px] max-w-[30px] w-full h-full flex align-center justify-center">
 												<input type="checkbox" className="cursor-pointer w-[15px] h-[15px]" onChange={ handleChange(v.path) } checked={ v.checked } />
 											</div>
